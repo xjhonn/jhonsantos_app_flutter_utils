@@ -1,0 +1,34 @@
+name: tekartik_app_navigator_flutter
+description: Experimental app navigator flutter
+version: 0.4.4
+publish_to: none
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tekartik_app_flutter_bloc:
+    git:
+      url: https://github.com/tekartik/app_flutter_utils.dart
+      ref: dart2_3
+      path: app_bloc
+    version: '>=0.2.2'
+  collection: '>=1.15.0-nullsafety.4'
+  path:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  test:
+  tekartik_lints_flutter:
+    git:
+      url: https://github.com/tekartik/common_flutter.dart
+      ref: dart2_3
+      path: packages/lints_flutter
+    version: '>=0.1.0'
+
+dependency_overrides:
+  tekartik_app_flutter_bloc:
+    path: ../app_bloc
